@@ -1,9 +1,8 @@
-
 import React, { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
-import { Airplane, Bed, Calendar, MapPin, Send } from "lucide-react";
+import { Airplay, Bed, Calendar, MapPin, Send } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 
 type Message = {
@@ -69,7 +68,7 @@ const TripMateChat: React.FC = () => {
   const transportOptions: TransportOption[] = [
     {
       type: "flight",
-      icon: <Airplane className="h-5 w-5" />,
+      icon: <Airplay className="h-5 w-5" />,
       title: "Flight",
       duration: "1h 30m",
       cost: "$120 - $250",
